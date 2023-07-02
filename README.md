@@ -106,7 +106,18 @@ Step 4. Import Data to kendra from AWS S3
 + find the data source and click sync now
   ![image](https://github.com/JamesChiang1014/LLM-Workshop/assets/29404157/678d203d-28b6-4adf-8c76-027f45cf63a8)
 
-+ 
+Step 5. Deploy LLM model
++ Find SmartSearchNotebook in SageMaker->Notebook->Notebook instances, click Open Jupyter
+  ![image](https://github.com/JamesChiang1014/LLM-Workshop/assets/29404157/a49906d8-be9a-4bb4-84a1-4068a146b020)
++  Open LLM_Model/llm-english/code/inference.py and modify line 37 LLM_NAME value to TheBloke/vicuna-7B-1.1-HF (remember to save the file)
+  <img width="650" alt="image" src="https://github.com/JamesChiang1014/LLM-Workshop/assets/29404157/39d641d3-8b94-44b4-862f-184c03e0089c">
+
++  Back to LLM_Model/llm-english/ and open llm_english_sagemaker_byos.ipynb. Run the code sequentially.The second step may take more than 15 mins.
+  ![image](https://github.com/JamesChiang1014/LLM-Workshop/assets/29404157/841c6591-f022-4f67-8be3-1693c543cf98)
+
++   Change chiness question to english to make sure the model can run well
+  <img width="1067" alt="image" src="https://github.com/JamesChiang1014/LLM-Workshop/assets/29404157/3857c2d7-99c5-4dd9-8e47-8c8d86c3cd58">
++   
 
   
 
