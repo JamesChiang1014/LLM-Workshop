@@ -96,7 +96,7 @@ Login Event Environments
 
 + back to cloud9 console, use following command to upload white paper to s3
   ```javascript
-  aws s3 sync  AWS_Whitepapers s3://smart-search-kendra-s3-source-bucket-444225271674-us-east-2/
+  aws s3 sync  AWS_Whitepapers s3://{your-s3-bucket}/
   ```
   <img width="856" alt="image" src="https://github.com/JamesChiang1014/LLM-Workshop/assets/29404157/9c5239a5-4890-467f-bdec-ad8a53aec437">
 
