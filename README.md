@@ -152,7 +152,15 @@ Login Event Environments
 + please check the public url. if you can see following page. the deployment is success.
   <img width="1316" alt="image" src="https://github.com/JamesChiang1014/LLM-Workshop/assets/29404157/69ab33fe-b850-4ed6-b577-0f9c2c95bb29">
 
-+ 
+## Test LLM Workshop Result
+Enter following questions for testing
+1. What is aws sagemaker 
+<img width="1253" alt="image" src="https://github.com/JamesChiang1014/LLM-Workshop/assets/29404157/11f3c23b-e866-443a-8edf-df745acffd55">
+2. How to build a web site on aws
+   <img width="1269" alt="image" src="https://github.com/JamesChiang1014/LLM-Workshop/assets/29404157/f9d2aa5b-dcc8-4601-8fb7-d2f5d411598c">
+3. what is aws security best practice
+   <img width="1234" alt="image" src="https://github.com/JamesChiang1014/LLM-Workshop/assets/29404157/16916855-2d70-4179-9ae8-3ef27b38500d">
+
 
   
 
