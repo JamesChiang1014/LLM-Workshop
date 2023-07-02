@@ -12,7 +12,7 @@ Login Event Environments
   <img width="1265" alt="image" src="https://github.com/JamesChiang1014/LLM-Workshop/assets/29404157/29d322ea-029c-440c-90fb-da0b9b8daab6">
 
 ## LLM Workshop Deployment
-Step 1. Create IAM users
+### Step 1. Create IAM users
 + Search IAM and create a user
   ![image](https://github.com/JamesChiang1014/LLM-Workshop/assets/29404157/67f76593-fd90-4682-8ec4-455cf1cd2270)
 + Provide a user name, ex:LLM_Deployment
@@ -27,7 +27,7 @@ Step 1. Create IAM users
   <img width="779" alt="image" src="https://github.com/JamesChiang1014/LLM-Workshop/assets/29404157/91986e5f-3b5b-4033-81a7-e389e4e72dfe">
 + Copy Access key and Secret access key to local text file
   ![image](https://github.com/JamesChiang1014/LLM-Workshop/assets/29404157/0e720b37-928d-459f-8f98-0941860c312b)
-Step 2. Create cloud9 instance
+### Step 2. Create cloud9 instance
 + Create cloud9 environments
 <img width="1379" alt="image" src="https://github.com/JamesChiang1014/LLM-Workshop/assets/29404157/4790aa42-f26a-40c6-bb1c-2d165bcec8bb">
 
@@ -52,7 +52,7 @@ Step 2. Create cloud9 instance
   ```javascript
   unzip smart_search-v2-k.zip
   ```
-Step 3. Deploy LLM+Kendra workshop package
+### Step 3. Deploy LLM+Kendra workshop package
 + use cdk to deploy lambda, kendra and sagemaker service
   ```javascript
   cd smart_search-v2/deployment/
@@ -84,7 +84,7 @@ Step 3. Deploy LLM+Kendra workshop package
 
   <img width="944" alt="image" src="https://github.com/JamesChiang1014/LLM-Workshop/assets/29404157/6d218036-bb4b-474a-a01c-a32380eb5e1a">
 
-Step 4. Import Data to kendra from AWS S3
+### Step 4. Import Data to kendra from AWS S3
 + download related white paper
 ```javascript
   cd ~
@@ -106,7 +106,7 @@ Step 4. Import Data to kendra from AWS S3
 + find the data source and click sync now
   ![image](https://github.com/JamesChiang1014/LLM-Workshop/assets/29404157/678d203d-28b6-4adf-8c76-027f45cf63a8)
 
-Step 5. Deploy LLM model
+### Step 5. Deploy LLM model
 + Find SmartSearchNotebook in SageMaker->Notebook->Notebook instances, click Open Jupyter
   ![image](https://github.com/JamesChiang1014/LLM-Workshop/assets/29404157/a49906d8-be9a-4bb4-84a1-4068a146b020)
 +  Open LLM_Model/llm-english/code/inference.py and modify line 37 LLM_NAME value to TheBloke/vicuna-7B-1.1-HF (remember to save the file)
@@ -117,7 +117,26 @@ Step 5. Deploy LLM model
 
 +   Change chiness question to english to make sure the model can run well
   <img width="1067" alt="image" src="https://github.com/JamesChiang1014/LLM-Workshop/assets/29404157/3857c2d7-99c5-4dd9-8e47-8c8d86c3cd58">
-+   
+
+### Step 6. Varifying LLM model with Kendra service
++ go to apigateway and click smart-search-qa-api
+  <img width="1378" alt="image" src="https://github.com/JamesChiang1014/LLM-Workshop/assets/29404157/2fb0e6fd-c2c0-429a-bc49-501cea86189d">
++ Select stage->prod, record the invoke URL
+  ![image](https://github.com/JamesChiang1014/LLM-Workshop/assets/29404157/847a710e-a85f-4be7-9c56-575b81ba7e84)
++ back to cloud9 console, select gradio-webpage.py under gradio-web. Change the url to your own url.
+ ![image](https://github.com/JamesChiang1014/LLM-Workshop/assets/29404157/62a3274b-0a8c-4a7b-9ed2-2cb0783ad58d)
++ install gradio
+  ```javascript
+  pip install gradio
+  ```
+  <img width="615" alt="image" src="https://github.com/JamesChiang1014/LLM-Workshop/assets/29404157/d9ab4cc5-b784-48a1-a888-2d1ae172f867">
+
++ Run gradio-webpage.py, and generate a local URL address and public URL address after running.
+  ```javascript
+  python gradio-webpage.py
+  ``
+  
++ 
 
   
 
