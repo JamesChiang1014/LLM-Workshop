@@ -41,9 +41,53 @@ Step 2. Create cloud9 instance
   <img width="776" alt="image" src="https://github.com/JamesChiang1014/LLM-Workshop/assets/29404157/a414be62-3ddf-465f-a720-375cb90af7f0">
   
 + select force update
-
+  
   <img width="507" alt="image" src="https://github.com/JamesChiang1014/LLM-Workshop/assets/29404157/028969bc-7899-45f8-972d-f25316dd755f">
++ Download workshop package to cloud9 instance
+  ```javascript
+  wget https://jameschiang1001.s3.amazonaws.com/smart_search-v2-k.zip
+  ```
+  <img width="1145" alt="image" src="https://github.com/JamesChiang1014/LLM-Workshop/assets/29404157/474bb175-21b4-4d49-821d-e6d1654c6807">
++ unzip the download file
+  ```javascript
+  unzip smart_search-v2-k.zip
+  ```
+Step 3. Deploy LLM+Kendra worksjop package
++ use cdk to deploy lambda, kendra and sagemaker service
+  ```javascript
+  cd smart_search-v2/deployment/
+  pip install -r requirements.txt
+  ```
+  <img width="622" alt="image" src="https://github.com/JamesChiang1014/LLM-Workshop/assets/29404157/fe30b41d-4397-4164-ab78-ae6e3911981e">
++ export related enviormens variable
+  ```javascript
+  export AWS_ACCOUNT_ID={your account}
+  export AWS_REGION={your region}
+  ```
+  Accound id:
+  
+  <img width="341" alt="image" src="https://github.com/JamesChiang1014/LLM-Workshop/assets/29404157/28032479-912e-4ef1-84df-f801e6d5d5ba">
 
+  Region:
+  
+  <img width="319" alt="image" src="https://github.com/JamesChiang1014/LLM-Workshop/assets/29404157/336be76b-da28-4a15-b393-c8c2837a84e6">
+
+  <img width="660" alt="image" src="https://github.com/JamesChiang1014/LLM-Workshop/assets/29404157/07a1f8a9-f319-415a-aca1-01668771dfe1">
+
+  + deploy resource by cdk
+    
+   ```javascript
+  cdk bootstrap
+  cdk deploy --all --require-approval never
+  ```
+  <img width="1008" alt="image" src="https://github.com/JamesChiang1014/LLM-Workshop/assets/29404157/2802e7da-c643-47ad-99bf-e80182e27038">
+
+  <img width="944" alt="image" src="https://github.com/JamesChiang1014/LLM-Workshop/assets/29404157/6d218036-bb4b-474a-a01c-a32380eb5e1a">
+
+
+
+
+  
 
 
 
