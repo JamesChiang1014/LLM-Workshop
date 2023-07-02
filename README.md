@@ -52,7 +52,7 @@ Step 2. Create cloud9 instance
   ```javascript
   unzip smart_search-v2-k.zip
   ```
-Step 3. Deploy LLM+Kendra worksjop package
+Step 3. Deploy LLM+Kendra workshop package
 + use cdk to deploy lambda, kendra and sagemaker service
   ```javascript
   cd smart_search-v2/deployment/
@@ -74,7 +74,7 @@ Step 3. Deploy LLM+Kendra worksjop package
 
   <img width="660" alt="image" src="https://github.com/JamesChiang1014/LLM-Workshop/assets/29404157/07a1f8a9-f319-415a-aca1-01668771dfe1">
 
-  + deploy resource by cdk
++ deploy resource by cdk (total process will take around 30 mins)
     
    ```javascript
   cdk bootstrap
@@ -84,8 +84,29 @@ Step 3. Deploy LLM+Kendra worksjop package
 
   <img width="944" alt="image" src="https://github.com/JamesChiang1014/LLM-Workshop/assets/29404157/6d218036-bb4b-474a-a01c-a32380eb5e1a">
 
+Step 4. Import Data to kendra from AWS S3
++ download related white paper
+```javascript
+  cd ~
+  wget https://jameschiang1001.s3.amazonaws.com/AWS_Whitepapers.zip
+  unzip AWS_Whitepapers.zip
+  ```
++ check kendra s3 data source, go to s3 service and check bacuket name which initial from smart-search-kendraxxxx
+  <img width="1341" alt="image" src="https://github.com/JamesChiang1014/LLM-Workshop/assets/29404157/44fc8f5b-b117-4ced-ac9f-a6ed4c871b73">
 
++ back to cloud9 console, use following command to upload white paper to s3
+  ```javascript
+  aws s3 sync  AWS_Whitepapers s3://smart-search-kendra-s3-source-bucket-444225271674-us-east-2/
+  ```
+  <img width="856" alt="image" src="https://github.com/JamesChiang1014/LLM-Workshop/assets/29404157/9c5239a5-4890-467f-bdec-ad8a53aec437">
 
++ back to kendra and click index
+  <img width="1028" alt="image" src="https://github.com/JamesChiang1014/LLM-Workshop/assets/29404157/c4dc8b1f-f384-4766-9f2b-134e2ebeaf0c">
+
++ find the data source and click sync now
+  ![image](https://github.com/JamesChiang1014/LLM-Workshop/assets/29404157/678d203d-28b6-4adf-8c76-027f45cf63a8)
+
++ 
 
   
 
