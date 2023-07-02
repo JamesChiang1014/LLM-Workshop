@@ -134,8 +134,24 @@ Login Event Environments
 + Run gradio-webpage.py, and generate a local URL address and public URL address after running.
   ```javascript
   python gradio-webpage.py
-  ``
-  
+  ```
+  if you see following errors
+  <img width="1091" alt="image" src="https://github.com/JamesChiang1014/LLM-Workshop/assets/29404157/b3a3229c-052e-4131-a9c4-c8e3dab854f2">
+  please reinstall fastapi
+  ```javascript
+  pip install fastapi
+  ```
+  <img width="897" alt="image" src="https://github.com/JamesChiang1014/LLM-Workshop/assets/29404157/fa0214fb-576b-450f-bb96-6cf1da11f845">
+
++ running gradio for web service
+  ```javascript
+  python gradio-webpage.py
+  ```
+  <img width="1105" alt="image" src="https://github.com/JamesChiang1014/LLM-Workshop/assets/29404157/3a0223c4-0f45-4527-893c-309ec764bfc3">
+
++ please check the public url. if you can see following page. the deployment is success.
+  <img width="1316" alt="image" src="https://github.com/JamesChiang1014/LLM-Workshop/assets/29404157/69ab33fe-b850-4ed6-b577-0f9c2c95bb29">
+
 + 
 
   
