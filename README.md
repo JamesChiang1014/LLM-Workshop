@@ -130,11 +130,7 @@ Login Event Environments
   pip install gradio
   ```
   <img width="615" alt="image" src="https://github.com/JamesChiang1014/LLM-Workshop/assets/29404157/d9ab4cc5-b784-48a1-a888-2d1ae172f867">
-
-+ Run gradio-webpage.py, and generate a local URL address and public URL address after running.
-  ```javascript
-  python gradio-webpage.py
-  ```
+  
   if you see following errors
   <img width="1091" alt="image" src="https://github.com/JamesChiang1014/LLM-Workshop/assets/29404157/b3a3229c-052e-4131-a9c4-c8e3dab854f2">
   please reinstall fastapi
