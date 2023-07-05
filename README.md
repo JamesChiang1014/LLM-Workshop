@@ -34,7 +34,8 @@ Login Event Environments
 
 + Provide a name, select t3.small instance, create
   <img width="1090" alt="image" src="https://github.com/JamesChiang1014/LLM-Workshop/assets/29404157/48b975dd-f987-4199-8c5a-761cc6dd3d17">
-  
+  <img width="862" alt="image" src="https://github.com/JamesChiang1014/LLM-Workshop/assets/29404157/21f0cbf3-b7b1-443b-8599-0258e8331e1b">
+
 + After instance created, open in Cloud9
   <img width="1095" alt="image" src="https://github.com/JamesChiang1014/LLM-Workshop/assets/29404157/17faec45-623f-400d-8cc6-93b1916dd32c">
   
