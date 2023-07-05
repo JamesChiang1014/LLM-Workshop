@@ -2,6 +2,7 @@
 ## Environments preparation
 Login Event Environments
 + Enter Your hashkey for login
+  https://dashboard.eventengine.run/login (Event Hash:d2f5-1fe0c65664-de)
   <img width="1397" alt="image" src="https://github.com/JamesChiang1014/LLM-Workshop/assets/29404157/2695f568-d13d-46e1-937f-2150d1061e0b">
 + Enter your email and get one time password for login
 + Select AWS console for access console environments
